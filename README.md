@@ -21,10 +21,18 @@ To run this project Firstly:-
 
 ## Fetching Data
 
-1. Now head to localhost:3000/Blogs
+1. Now head to localhost:3000/Blog
 2. Now here Blogs is our endpoint to serve all our blog posts.
-3. To fetch blog by id simply head to localhost:3000/Blogs/ and at the end append the id of the blog.
+3. To fetch blog by id simply head to localhost:3000/Blog/ and at the end append the id of the blog.
 
 
+## Live Example:-
+
+Heroku link :- http://blog-backendapi.herokuapp.com/Blog/
+
+:information_source: Remember to fetch particular blog by ID then append the ID to the end of Blog/
+
+    Example: 
+        1. http://blog-backendapi.herokuapp.com/Blog/2rvqpdbpka3n3fhd  --> Fetch single blog by ID (2rvqpdbpka3n3fhd )
 
 
