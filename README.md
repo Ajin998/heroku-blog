@@ -30,7 +30,7 @@ To run this project Firstly:-
 
 Heroku link :- http://blog-backendapi.herokuapp.com/Blog/
 
-:information_source: Remember to fetch particular blog by ID then append the ID to the end of Blog/
+:information_source: Remember to fetch particular blog by ID, append the ID to the end of Blog/
 
     Example: 
         1. http://blog-backendapi.herokuapp.com/Blog/2rvqpdbpka3n3fhd  --> Fetch single blog by ID (2rvqpdbpka3n3fhd )
