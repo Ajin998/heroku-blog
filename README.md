@@ -24,6 +24,7 @@ To run this project Firstly:-
 1. Now head to localhost:3000/Blog
 2. Now here Blogs is our endpoint to serve all our blog posts.
 3. To fetch blog by id simply head to localhost:3000/Blog/ and at the end append the id of the blog.
+4. For performing query simply head to localhost:3000/Blog/query/?...
 
 
 ## Live Example:-
