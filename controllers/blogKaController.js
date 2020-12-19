@@ -51,7 +51,7 @@ const getBlogById = (req, res, next) => {
 };
 
 //Create Blog ka part
-const createBlog = (req, res, next) => {
+const createBlog = (req, res) => {
   let links = [];
   if (req.body.links)
     req.body.links.forEach((link) =>
@@ -62,7 +62,7 @@ const createBlog = (req, res, next) => {
     req.body.title,
     req.body.content,
     links,
-    req.body.imageUrl
+    req.file.path
   );
   //Append in file
   datas.push(blogs);
