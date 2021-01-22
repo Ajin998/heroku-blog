@@ -9,7 +9,7 @@ const datas = JSON.parse(fs.readFileSync(fileName, "utf8"));
 
 //Get all the Blogs in the home page
 const getAllBlogs = (req, res, next) => {
-  res.status(200).json({ Blogs: datas });
+  res.status(200).json(datas);
 };
 
 //Get all the blogs by query
@@ -38,11 +38,7 @@ const getAllBlogsByQuery = (req, res, next) => {
 const getBlogById = (req, res, next) => {
   const found = datas.some((data) => data.id === req.params.id);
   if (found) {
-    res.status(200).json({
-      status: "Successfully Acknowledged!!",
-      Message: `Blog of ID "${req.params.id}" found and fetched`,
-      result: datas.filter((data) => data.id == req.params.id),
-    });
+    res.status(200).json(datas.filter((data) => data.id == req.params.id));
   } else {
     res.status(400).json({
       message: "Enter correct ID",
